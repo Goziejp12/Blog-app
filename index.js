@@ -44,8 +44,6 @@ form.addEventListener("submit", function(e) {
         .then(post => {
             postsArray.unshift(post)
             renderPosts()
-            titleInput.value = ""
-            bodyInput.value = ""
-            // form.reset()
+            form.reset()
         })
 })
